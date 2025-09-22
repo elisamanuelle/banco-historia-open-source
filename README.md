@@ -48,6 +48,25 @@ Com o novo projeto pronto, ignorei o banco de dados padrão e criei um personali
 CREATE DATABASE historydb;
 ```
 
+## Criação de Schemas
 
+Estruturei o banco para que os schemas seguissem a lógica "medalhão". Portanto, criei três schemas em "historydb":
+1. *bronze*: schema destino dos dados brutos ingeridos manualmente, via CSV, JSON ou outras fontes. Funciona como um data lake.
+2. *silver*: schema que armazenará as tabelas com dados limpos e transformados.
+3. *gold*: schema onde serão salvas views, tabelas com métricas calculadas e dados prontos para uso em visualização. Isto é, funcionará como um data warehouse.
+
+Código PostgreSQL:
+
+```
+CREATE SCHEMA bronze;
+
+CREATE SCHEMA silver;
+
+CREATE SCHEMA gold;
+```
+
+Neon console:
+
+<img width="1038" height="536" alt="image" src="https://github.com/user-attachments/assets/7877da18-4914-4e47-9f3d-42a66287f6cf" />
 
 
