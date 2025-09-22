@@ -34,3 +34,20 @@ Schema Gold – Neon
 Dashboards interativos
 
 ```
+
+## Criação do Banco de Dados
+
+Escolhi o [Neon](https://neon.com/) para testar criar um banco de dados para o projeto. Usei a minha conta GitHub no cadastro. E, ao entrar, criei um projeto, selecionando a última versão Postgres (17), escolhendo AWS como servidor de nuvem e a região AWS US East 1, N. Virginia.
+
+
+<img width="1335" height="739" alt="image" src="https://github.com/user-attachments/assets/106be05c-e679-4f5e-a024-5c797cb369fc" />
+
+Com o novo projeto pronto, ignorei o banco de dados padrão e criei um personalizado no *Editor SQL* do [Neon](https://neon.com/).
+
+```
+CREATE DATABASE historydb;
+```
+
+
+
+
